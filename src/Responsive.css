@@ -71,6 +71,17 @@
         right: 2.1875rem;
         bottom: 2.1875rem;
     }
+
+    .tech-cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tech-cards .responsive {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 @media (max-width:390px) {

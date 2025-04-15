@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik%3Awght%40300%3B400%3B500%3B600%3B700%3B800%3B900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto%3Awght%40100%3B300%3B400%3B500%3B700%3B900&display=swap');
 
+/* git add .
+git commit -m "Fix: Add bootstrap dependency and import"
+git push */
 
 * {
     box-sizing: border-box;

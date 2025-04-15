@@ -67,18 +67,22 @@ export default function About() {
                                 <div className="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
                                     {
                                         activeTab === 'frontend' && (
-                                            <div className="tech-cards gap-3 d-flex">
-                                                <div className="tech-card">
-                                                    <img src={js} alt="JavaScript" />
-                                                    <p>JavaScript</p>
-                                                </div>
-                                                <div className="tech-card">
-                                                    <img src={nextjs} alt="Next.js" />
-                                                    <p>Next.js</p>
-                                                </div>
-                                                <div className="tech-card">
-                                                    <img src={react} alt="React.js" />
-                                                    <p>React.js</p>
+                                            <div className='d-flex gap-3'>
+                                                <div className="d-flex responsive gap-3">
+                                                    <div className="tech-cards gap-3 d-flex">
+                                                        <div className="tech-card">
+                                                            <img src={js} alt="JavaScript" />
+                                                            <p>JavaScript</p>
+                                                        </div>
+                                                        <div className="tech-card">
+                                                            <img src={nextjs} alt="Next.js" />
+                                                            <p>Next.js</p>
+                                                        </div>
+                                                        <div className="tech-card">
+                                                            <img src={react} alt="React.js" />
+                                                            <p>React.js</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         )
@@ -86,26 +90,33 @@ export default function About() {
 
                                     {
                                         activeTab === 'backend' && (
-                                            <div className="tech-cards d-flex gap-3">
-                                                <div className="tech-card">
-                                                    <img width="48" height="48" src={nodejs} alt="nodejs" />
-                                                    <p>Node.js</p>
+                                            <div className="tech-cards d-flex flex-wrap gap-3">
+                                                <div className="d-flex responsive gap-3">
+                                                    <div className="tech-card text-center">
+                                                        <img width="48" height="48" src={nodejs} alt="Node.js" />
+                                                        <p><strong>Node.js</strong></p>
+                                                    </div>
+                                                    <div className="tech-card text-center">
+                                                        <img src={express} alt="Express.js" />
+                                                        <p><strong>Express.js</strong></p>
+                                                    </div>
+                                                    <div className="tech-card text-center">
+                                                        <img src={mongodb} alt="MongoDB" />
+                                                        <p><strong>MongoDB</strong></p>
+                                                    </div>
+                                                    <div className="tech-card text-center">
+                                                        <img src={mysql} alt="MySQL" />
+                                                        <p><strong>MySQL</strong></p>
+                                                    </div>
+                                                    <div className="tech-card text-center">
+                                                        <img width="48" height="48" src={php} alt="PHP" />
+                                                        <p><strong>PHP</strong></p>
+                                                    </div>
                                                 </div>
-                                                <div className="tech-card">
-                                                    <img src={express} alt="Express.js" />
-                                                    <p>Express.js</p>
-                                                </div>
-                                                <div className="tech-card">
-                                                    <img src={mongodb} alt="MongoDB" />
-                                                    <p>MongoDB</p>
-                                                </div>
-                                                <div className="tech-card">
-                                                    <img src={mysql} alt="MongoDB" />
-                                                    <p>MySql</p>
-                                                </div>
-                                                <div className="tech-card">
-                                                    <img width="24" height="24" src={php} />
-                                                    <p>PHP</p>
+
+                                                <div className="d-flex gap-3">
+
+
                                                 </div>
                                             </div>
                                         )
