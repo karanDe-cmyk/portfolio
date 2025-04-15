@@ -1,6 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import logo from '../images/logo.png';
 import rightBanner from '../images/home-right.webp';
 import whatsapp from '../images/whatsapp-icon.png'

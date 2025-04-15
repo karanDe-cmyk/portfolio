@@ -148,7 +148,7 @@ p {
 }
 
 .header_wrapper .navbar-brand img {
-    max-width: 10rem;
+    max-width: 5rem;
     height: auto;
 }
 
@@ -441,7 +441,7 @@ p {
 /* Footer */
 
 .footer_wrapper .footer-logo img {
-    max-width: 12.5rem;
+    max-width: 5.5rem;
     height: auto;
 }
 
