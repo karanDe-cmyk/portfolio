@@ -12,13 +12,13 @@ import php from '../images/php.svg'
 import express from '../images/express-original.svg'
 import mysql from '../images/mysql.png'
 import GradientText from './GradientText/GradientText';
-
 export default function About() {
 
     const [activeTab, setActiveTab] = useState('frontend');
 
     return (
         <div>
+            
             <section id="about" className="about_wrapper">
                 <div className="container">
                     <div className="row align-items-center">

@@ -506,3 +506,7 @@ p {
 .tech-card:hover {
     transform: translateY(-5px);
 }
+
+iframe {
+    width: 100%;
+}

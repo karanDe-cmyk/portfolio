@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import portfolio1 from '../images/portfolio/jwt.png'
 import portfolio2 from '../images/portfolio/razorpay.jpg'
 import portfolio3 from '../images/portfolio/admin.png'
@@ -16,9 +16,9 @@ const portfolioTabs = [
         title: "Popular",
         active: true,
         projects: [
-            {image: portfolio1, name: "JWT AUTHENTICATION"},
-            {image: portfolio2, name: "RAZORPAY INTEGRATION"},
-            {image: portfolio3, name: "Admin Dashboard"}
+            { image: portfolio1, name: "JWT AUTHENTICATION", video: '<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7316850499666743296?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe' },
+            { image: portfolio2, name: "RAZORPAY INTEGRATION", video: '<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7318178466539933698?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>'},
+            { image: portfolio3, name: "Admin Dashboard" }
         ]
     },
     {
@@ -26,9 +26,9 @@ const portfolioTabs = [
         title: "Latest",
         active: false,
         projects: [
-            {image: portfolio4},
-            {image: portfolio5},
-            {image: portfolio6}
+            { image: portfolio4 },
+            { image: portfolio5 },
+            { image: portfolio6 }
         ],
     },
     {
@@ -36,15 +36,27 @@ const portfolioTabs = [
         title: "Working...",
         active: false,
         projects: [
-            {image: portfolio7},
-            {image: portfolio8},
-            {image: portfolio3, name: "Admin Dashboard"}
+            { image: portfolio7 },
+            { image: portfolio8 },
+            { image: portfolio3, name: "Admin Dashboard" }
         ]
     }
 ];
 
 export default function Portfolio() {
     const [activeTab, setActiveTab] = useState("pills-one");
+    const [showModal, setShowModal] = useState(false);
+    const [activeProject, setActiveProject] = useState(null);
+
+    const handleOpenModal = (project) => {
+        setActiveProject(project);
+        setShowModal(true);
+    };
+
+    const handleCloseModal = () => {
+        setActiveProject(null);
+        setShowModal(false);
+    };
     return (
         <div>
             <section id="portfolio" className="portfolio_wrapper">
@@ -90,7 +102,7 @@ export default function Portfolio() {
                                 <div className="row">
                                     {tab.projects.map((project, i) => (
                                         <div className="col-lg-4 col-sm-6" key={i}>
-                                            <div className="portfolio-img">
+                                            <div className="portfolio-img" onClick={() => handleOpenModal(project)}>
                                                 <img
                                                     src={`${project.image}`}
                                                     className="img-fluid w-100"
@@ -110,6 +122,31 @@ export default function Portfolio() {
                     </div>
                 </div>
             </section>
+            {
+                showModal && activeProject && (
+                    <div className="modal show fade d-block" tabIndex="-1" role="dialog">
+                        <div className="modal-dialog" role="document">
+                            <div className="modal-content">
+                                <div className="modal-header">
+                                    <h5 className="modal-title">{activeProject.name}</h5>
+                                </div>
+                                <div className="modal-body">
+                                    {activeProject.video ? (
+                                        <div dangerouslySetInnerHTML={{ __html: activeProject.video }} />
+                                    ) : (
+                                        <p>No video available for this project.</p>
+                                    )}
+                                </div>
+                                <div className="modal-footer">
+                                    <button type="button" className="btn btn-secondary" onClick={handleCloseModal}>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )
+            }
         </div>
     )
 }
