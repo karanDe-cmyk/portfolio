@@ -17,7 +17,7 @@ const portfolioTabs = [
         active: true,
         projects: [
             { image: portfolio1, name: "JWT AUTHENTICATION", video: '<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7316850499666743296?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe' },
-            { image: portfolio2, name: "RAZORPAY INTEGRATION", video: '<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7318178466539933698?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>'},
+            { image: portfolio2, name: "RAZORPAY INTEGRATION", video: '<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7318377664602365952?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>'},
             { image: portfolio3, name: "Admin Dashboard" }
         ]
     },
