@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import portfolio1 from '../images/portfolio/jwt.png'
 import portfolio2 from '../images/portfolio/razorpay.jpg'
 import portfolio3 from '../images/portfolio/admin.png'
-import portfolio4 from '../images/portfolio/portfolio4.webp'
+import portfolio4 from '../images/maccoweb.png';
 import portfolio5 from '../images/portfolio/portfolio5.webp'
 import portfolio6 from '../images/portfolio/portfolio6.webp'
 import portfolio7 from '../images/portfolio/portfolio7.webp'
@@ -26,7 +26,7 @@ const portfolioTabs = [
         title: "Latest",
         active: false,
         projects: [
-            { image: portfolio4 },
+            { image: portfolio4, name: "MaccoTech Website", link: "maccoweb-rho.vercel.app" },
             { image: portfolio5 },
             { image: portfolio6 }
         ],
@@ -36,7 +36,7 @@ const portfolioTabs = [
         title: "Working...",
         active: false,
         projects: [
-            { image: portfolio7 },
+            { image: portfolio7, name: "Seller Panel Ecommerce" },
             { image: portfolio8 },
             { image: portfolio3, name: "Admin Dashboard" }
         ]
@@ -102,7 +102,7 @@ export default function Portfolio() {
                                 <div className="row">
                                     {tab.projects.map((project, i) => (
                                         <div className="col-lg-4 col-sm-6" key={i}>
-                                            <div className="portfolio-img" onClick={() => handleOpenModal(project)}>
+                                            <div className="portfolio-img mb-3" onClick={() => handleOpenModal(project)}>
                                                 <img
                                                     src={`${project.image}`}
                                                     className="img-fluid w-100"
@@ -112,8 +112,7 @@ export default function Portfolio() {
                                                     <FontAwesomeIcon className="fa fa-plus" icon={faPlus} />
                                                 </div>
                                             </div>
-                                            <h5 className="mb-0 mt-4">{project.name}</h5>
-                                            <p>Portfolio</p>
+                                            <a href={project.link} className="text-decoration-none" role="button" onClick={() => handleOpenModal(project)}>{project.name}</a>
                                         </div>
                                     ))}
                                 </div>

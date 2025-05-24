@@ -64,7 +64,7 @@ export default function Footer() {
                         <div className="col-lg-8 col-sm-12">
                             <p className="footer-text text-center my-2">
                                 Copyright © 2024 All rights reserved |
-                                <a href="#" className="ms-1">Karan</a>
+                                <a href={'/'} className="ms-1">Karan</a>
                             </p>
                         </div>
                     </div>
