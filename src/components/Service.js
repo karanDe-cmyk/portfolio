@@ -6,7 +6,7 @@ const serviceData = [
         title: "Web Design",
         image: "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         description: "Custom, responsive website designs that captivate your audience and reflect your brand identity with modern UI/UX principles.",
-        tech: ["Figma", "Adobe XD", "Sketch"]
+        tech: ["Figma"]
     },
     {
         title: "Web Development",
@@ -18,25 +18,25 @@ const serviceData = [
         title: "App Development",
         image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         description: "Cross-platform mobile application development with React Native or Flutter for iOS and Android with native performance.",
-        tech: ["React Native", "Flutter", "Firebase"]
+        tech: ["React Native"]
     },
     {
         title: "Admin Panels",
         image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         description: "Custom admin dashboards with analytics, user management, and business logic tailored to your operational needs.",
-        tech: ["MERN Stack", "Material UI", "Redux"]
+        tech: ["MERN Stack", "Material UI"]
     },
-    {
-        title: "E-Commerce Solutions",
-        image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-        description: "Complete online store development with payment gateways, inventory management, and secure checkout systems.",
-        tech: ["Shopify", "WooCommerce", "Magento"]
-    },
+    // {
+    //     title: "E-Commerce Solutions",
+    //     image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+    //     description: "Complete online store development with payment gateways, inventory management, and secure checkout systems.",
+    //     tech: ["Shopify", "WooCommerce", "Magento"]
+    // },
     {
         title: "API Development",
         image: "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-        description: "RESTful and GraphQL API development with proper documentation, authentication, and scalability in mind.",
-        tech: ["Node.js", "GraphQL", "Postman"]
+        description: "RESTful and MongoDB API development with proper documentation, authentication, and scalability in mind.",
+        tech: ["Node.js", "MYSQL", "MongoDB", "Postman"]
     }
 ];
 
