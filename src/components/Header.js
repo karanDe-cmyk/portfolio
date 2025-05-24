@@ -3,7 +3,7 @@ import rightBanner from '../images/home-right.webp';
 import whatsapp from '../images/whatsapp-icon.png'
 import cv from '../images/B.sc.pdf'
 import About from './About';
-// import Service from './Service';
+import Service from './Service';
 import Portfolio from './Portfolio';
 import Blog from './Blog';
 import Footer from './Footer';
@@ -43,7 +43,7 @@ export default function Header() {
                 </section>
             </FadeContent>
             <About />
-            {/* <Service /> */}
+            <Service />
             <Portfolio />
             <Blog />
             <Footer />

@@ -36,7 +36,7 @@ const portfolioTabs = [
         title: "Working...",
         active: false,
         projects: [
-            { image: portfolio7, name: "Seller Panel Ecommerce" },
+            { image: portfolio7, name: "Online Satta Matka Application" },
             { image: portfolio8 },
             { image: portfolio3, name: "Admin Dashboard" }
         ]

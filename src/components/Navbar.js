@@ -21,9 +21,9 @@ export default function Navbar() {
                                 <li className="nav-item">
                                     <a className="nav-link" href="#about">About</a>
                                 </li>
-                                {/* <li className="nav-item">
+                                <li className="nav-item">
                                     <a className="nav-link" href="#services">Services</a>
-                                </li> */}
+                                </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#portfolio">Portfolio</a>
                                 </li>

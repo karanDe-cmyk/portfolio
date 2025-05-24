@@ -144,7 +144,8 @@ p {
 }
 
 .header_wrapper .navbar {
-    padding: 0.9375rem 0;
+    /* padding: 0.9375rem 0; */
+    padding: 0;
     -o-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
